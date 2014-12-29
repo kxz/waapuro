@@ -21,7 +21,7 @@ class Tox(test):
 setup(
     name='waapuro',
     description='A dead-simple hiragana and katakana romanization library',
-    version='1.0',
+    version='1.0.1',
     author='Kevin Xiwei Zheng',
     author_email='blankplacement+waapuro@gmail.com',
     url='https://github.com/kxz/waapuro',
