@@ -5,8 +5,8 @@ A dead-simple hiragana and katakana romanization library for Python 2.7
 and 3.4+.
 
 By default, romanization is performed according to `ISO 3602 Strict
-(Nihon-shiki) <nihonshiki_>`_ with long vowels expanded (e.g., *ou* or
-*oo* instead of *ô*):
+(Nihon-shiki) <https://en.wikipedia.org/wiki/Nihon-shiki_romanization>`_
+with long vowels expanded (e.g., *ou* or *oo* instead of *ô*):
 
 >>> from __future__ import unicode_literals
 >>> import waapuro
@@ -14,7 +14,8 @@ By default, romanization is performed according to `ISO 3602 Strict
 'tooryanse'
 
 Passing the *hepburnish* option replaces some of the individual kana
-romanizations with more Hepburn_-like variants:
+romanizations with more `Hepburn
+<https://en.wikipedia.org/wiki/Hepburn_romanization>`_-like variants:
 
 >>> waapuro.romanize('あいづち')
 'aiduti'
@@ -26,8 +27,4 @@ To install, just use::
     $ pip install waapuro
 
 Report bugs and make feature requests on `Waapuro's GitHub project
-page <github_>`_.
-
-.. _github: https://github.com/kxz/waapuro
-.. _hepburn: https://en.wikipedia.org/wiki/Hepburn_romanization
-.. _nihonshiki: https://en.wikipedia.org/wiki/Nihon-shiki_romanization
+page <https://github.com/kxz/waapuro>`_.
