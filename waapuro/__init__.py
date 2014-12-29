@@ -60,6 +60,8 @@ def romanize(kana_string, hepburnish=False):
     of *ô*).  If *hepburnish* is True, the following changes are made:
 
     - *si* → *shi*
+    - *sya* → *sha*
+    - *syo* → *sho*
     - *zi* → *ji*
     - *zya* → *ja*
     - *zyo* → *jo*
@@ -100,9 +102,8 @@ def romanize(kana_string, hepburnish=False):
                 # in order to accommodate the palatalization.
                 romaji_list[-1] = romaji_list[-1][:-1]
                 # Transform *zya* into Hepburnish *ja*.
-                if (hepburnish and
-                        romaji_list[-1] in ('ch', 'tch', 'j') and
-                        romaji[0] == 'y'):
+                if (hepburnish and romaji[0] == 'y' and
+                        romaji_list[-1] in ('ch', 'tch', 'sh', 'ssh', 'j')):
                     romaji = romaji[1:]
             romaji_list.append(romaji)
             continue

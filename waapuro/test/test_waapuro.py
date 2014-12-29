@@ -37,8 +37,14 @@ class RomanizationTestCase(unittest.TestCase):
 
     def test_hepburnish(self):
         self.assertEqual(
-            romanize('しじじゃじょちぢつっちっちゃづふ', hepburnish=True),
-            'shijijajochijitsutchitchazufu')
+            romanize('ししゃしょっしっしゃっしょ', hepburnish=True),
+            'shishashosshisshassho')
+        self.assertEqual(
+            romanize('ちちゃちょっちっちゃっちょ', hepburnish=True),
+            'chichachotchitchatcho')
+        self.assertEqual(
+            romanize('じじゃじょぢつづふ', hepburnish=True),
+            'jijajojitsuzufu')
 
     def test_readme_examples(self):
         self.assertEqual(romanize('とおりゃんせ'), 'tooryanse')
